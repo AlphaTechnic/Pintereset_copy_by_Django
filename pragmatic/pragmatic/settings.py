@@ -33,6 +33,7 @@ environ.Env.read_env(
 # SECURITY WARNING: keep the secret key used in production secret!
 # Raises django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
 SECRET_KEY = env('SECRET_KEY')
+# SECRET_KEY를 문자열로 외부에 노출시키지 않겠다.
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
